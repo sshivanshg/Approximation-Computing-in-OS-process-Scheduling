@@ -30,6 +30,8 @@ all: $(EXP1_BIN) $(EXP2_BIN) \
 
 exp1: $(EXP1_BIN)
 
+exp2: $(EXP2_BIN)
+
 $(EXP1_BIN): $(SRC_ALL) $(EXP1_SRC)
 	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
 
@@ -145,6 +147,7 @@ help:
 
 .PHONY: all clean help run_all test_all \
 	exp1 \
+	exp2 \
         test_task test_fairness \
         test_metrics test_exact \
         test_bsa test_clti test_apaf
