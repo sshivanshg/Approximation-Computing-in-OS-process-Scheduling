@@ -28,6 +28,8 @@ EXP4_BIN = results/exp4
 all: $(EXP1_BIN) $(EXP2_BIN) \
      $(EXP3_BIN) $(EXP4_BIN)
 
+exp1: $(EXP1_BIN)
+
 $(EXP1_BIN): $(SRC_ALL) $(EXP1_SRC)
 	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
 
@@ -142,6 +144,7 @@ help:
 	@echo "  results/exp4 - Error bound verify"
 
 .PHONY: all clean help run_all test_all \
+	exp1 \
         test_task test_fairness \
         test_metrics test_exact \
         test_bsa test_clti test_apaf
