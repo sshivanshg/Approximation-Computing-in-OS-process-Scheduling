@@ -34,6 +34,8 @@ exp2: $(EXP2_BIN)
 
 exp3: $(EXP3_BIN)
 
+exp4: $(EXP4_BIN)
+
 $(EXP1_BIN): $(SRC_ALL) $(EXP1_SRC)
 	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
 
@@ -151,6 +153,7 @@ help:
 	exp1 \
 	exp2 \
 	exp3 \
+	exp4 \
         test_task test_fairness \
         test_metrics test_exact \
         test_bsa test_clti test_apaf
