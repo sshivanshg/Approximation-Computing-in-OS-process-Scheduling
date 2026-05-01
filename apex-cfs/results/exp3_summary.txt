@@ -1,0 +1,26 @@
+APEX-CFS Experiment 3 -- Dynamic Spike (APAF)
+
+Phase 1 (5 tasks, ticks 0-499):
+  Avg Jain:       0.9946
+  Min Jain:       0.2000
+  Dominant state: LOOSE
+
+Phase 2 (55 tasks, ticks 500-1499):
+  Avg Jain:       0.3327
+  Min Jain:       0.0913
+  Dominant state: TIGHT
+
+Phase 3 (15 tasks, ticks 1500-2000):
+  Avg Jain:       0.8335
+  Min Jain:       0.6062
+  Dominant state: TIGHT
+
+Controller performance:
+- Reaction time: 3 ticks (3 ms)
+- Recovery time: 435 ticks
+
+APAF controller confirmed adaptive:
+- Phase 1 (light): dominant=LOOSE
+- Phase 2 (spike): dominant=TIGHT
+- Phase 3 (recovery): dominant=TIGHT
+- Reaction time: 3 ticks (3 ms)

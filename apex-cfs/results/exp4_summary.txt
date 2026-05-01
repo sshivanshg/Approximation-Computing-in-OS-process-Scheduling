@@ -1,0 +1,26 @@
+APEX-CFS Experiment 4 -- Error Bound Verification
+Tasks: 20 mixed nice
+Ticks: 1000
+
+Logic    Theoretical  MaxObserved  AvgObserved  Violations Verified  
+-----    -----------  -----------  -----------  ---------- --------  
+BSA      1.0037       0.9996       0.9996       0          YES       
+CLTI     0.0938       0.0728       0.0728       0          YES       
+APAF     4.1474       0.1177       0.0056       0          YES       
+
+Error Distribution (ticks by error range):
+
+Logic    <1%          1-3%         3-5%         >5%         
+-----    ---          ----         ----         ---         
+BSA      1000         0            0            0           
+CLTI     1000         0            0            0           
+APAF     1000         0            0            0           
+
+APAF State Distribution:
+  TIGHT=989(98.9%)  MEDIUM=11(1.1%)  LOOSE=0(0.0%)
+
+CONCLUSION:
+All 3 approximation logics maintain
+error within theoretical bounds
+across 1000 ticks with mixed workload.
+Mathematical derivations confirmed.

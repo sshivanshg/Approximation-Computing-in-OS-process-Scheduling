@@ -1,0 +1,20 @@
+APEX-CFS Experiment 2 -- Mixed Workload
+Ticks: 2000
+Workload: 1 interactive (nice=-10) + 10 batch (nice=0)
+Interactive pattern: 5 on / 5 off
+
+Comparison Table (2000 ticks):
+Logic    CPU_Share%   MaxWait    AvgWait    BatchJain  MaxErr%   
+-----    ----------   -------    -------    ---------  -------   
+EXACT    48.0000      5          1.00       1.0000     0.0000    
+BSA      48.0500      5          1.00       1.0000     31.4453   
+CLTI     28.4500      5          3.02       1.0000     3.0211    
+APAF     48.0000      5          1.00       1.0000     2.3438    
+
+Key Findings:
+- Interactive task CPU share (EXACT):    48.00%
+- Interactive task CPU share (APAF):     48.00%
+- Share difference EXACT vs APAF: 0.00%
+- Max wait ticks (EXACT): 5
+- Max wait ticks (APAF):  5
+- Batch fairness preserved: YES

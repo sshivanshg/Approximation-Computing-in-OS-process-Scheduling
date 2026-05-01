@@ -1,0 +1,32 @@
+APEX-CFS Experiment 1 -- Equal Weight Tasks
+Ticks: 1000
+N values tested: 10, 50, 100
+Logics tested: EXACT, BSA, CLTI, APAF
+
+--- N=10 tasks ---
+  Results Table (N=10, 1000 ticks):
+  Logic    Jain(fin)  Jain(min)  MaxErr%    Ops_Saved    State   
+  -----    ---------  ---------  -------    ---------    -----   
+  EXACT    1.0000     0.1000     0.0000     0            N/A     
+  BSA      1.0000     0.1000     31.4453    10000        N/A     
+  CLTI     1.0000     0.1000     3.0211     40000        N/A     
+  APAF     1.0000     0.1000     1.1765     39570        LOOSE   
+
+--- N=50 tasks ---
+  Results Table (N=50, 1000 ticks):
+  Logic    Jain(fin)  Jain(min)  MaxErr%    Ops_Saved    State   
+  -----    ---------  ---------  -------    ---------    -----   
+  EXACT    1.0000     0.0200     0.0000     0            N/A     
+  BSA      1.0000     0.0200     31.4453    50000        N/A     
+  CLTI     1.0000     0.0200     3.0211     200000       N/A     
+  APAF     1.0000     0.0200     1.5625     191650       LOOSE   
+
+--- N=100 tasks ---
+  Results Table (N=100, 1000 ticks):
+  Logic    Jain(fin)  Jain(min)  MaxErr%    Ops_Saved    State   
+  -----    ---------  ---------  -------    ---------    -----   
+  EXACT    1.0000     0.0100     0.0000     0            N/A     
+  BSA      1.0000     0.0100     31.4453    100000       N/A     
+  CLTI     1.0000     0.0100     3.0211     400000       N/A     
+  APAF     1.0000     0.0100     1.5723     367700       LOOSE   
+

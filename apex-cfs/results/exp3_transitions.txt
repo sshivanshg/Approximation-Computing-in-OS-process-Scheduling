@@ -1,0 +1,10 @@
+APEX-CFS Experiment 3 -- APAF State Transitions
+Spike at tick 500 (5->55 tasks)
+Recovery at tick 1500 (55->15 tasks)
+
+tick=3 phase=1 MEDIUM->TIGHT J=0.8000
+tick=11 phase=1 TIGHT->MEDIUM J=0.9600
+tick=15 phase=1 MEDIUM->LOOSE J=0.9846
+tick=503 phase=2 LOOSE->MEDIUM J=0.0924
+tick=507 phase=2 MEDIUM->TIGHT J=0.0938
+tick=1935 phase=3 TIGHT->MEDIUM J=0.9511
